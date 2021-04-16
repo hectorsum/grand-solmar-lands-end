@@ -1,0 +1,17 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.reservhotel.com	TRUE	/	FALSE	1999999999	__cfduid	d80b741a015c3794d10bb5e6a01a597901618498864
+www.reservhotel.com	TRUE	/	FALSE	1999999999	SameSite	Lax
+.bootstrapcdn.com	TRUE	/	FALSE	1999999999	__cfduid	d1eaa7c316ef28c68fff6b70eb0424d541618498867
+maxcdn.bootstrapcdn.com	TRUE	/	FALSE	1999999999	SameSite	Lax
+www.thehotelsnetwork.com	TRUE	/	FALSE	1999999999	__thn_ss	62651183ce5099d2c464708f41e35331
+www.thehotelsnetwork.com	TRUE	/	FALSE	1999999999	SameSite	none
+.thehotelsnetwork.com	TRUE	/	FALSE	1999999999	visid_incap_2454396	GWohI9EdQfOdgIiS6RrZaEVVeGAAAAAAQUIPAAAAAABGrVhUOsbk0Jet7Yr7LzRV
+.thehotelsnetwork.com	TRUE	/	FALSE	1999999999	nlbi_2454396	4euxUV8pBlKCCmB4LQFUTQAAAACWUUJRPB/axsvs4TK3GDbc
+.thehotelsnetwork.com	TRUE	/	FALSE	1999999999	incap_ses_117_2454396	+kGFech+LkxNAR0HLKufAXFVeGAAAAAAd5v9wY9DTh1/2GPH/7yzzg==
+.cloudflareinsights.com	TRUE	/	FALSE	1999999999	__cfduid	d97527800aa63c79d28adbd48c414903f1618498934
+static.cloudflareinsights.com	TRUE	/	FALSE	1999999999	SameSite	Lax
+theguestbook.com	TRUE	/	FALSE	1999999999	request_method	GET
+theguestbook.com	TRUE	/	FALSE	1999999999	_session_id	e2bd485a9434b1d5767e28ba42f96cf2
+theguestbook.com	TRUE	/	FALSE	1999999999	SameSite	None
+
