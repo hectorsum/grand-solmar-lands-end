@@ -155,7 +155,7 @@
 }
 
 .flights-wrap .flight-list li {
-  width: 90%;
+  width: 100%;
   padding-bottom: 1em;
   padding: 22px 0;
   border-bottom: 1px solid #e2dfdf !important
@@ -165,7 +165,8 @@
   width: 100%;
   padding-bottom: 1em;
   padding: 22px;
-  border: 2px solid #e2dfdf !important
+  border: 2px solid #e2dfdf !important;
+  margin:0;
 }
 
 .flights-wrap .flight-filter-box {
@@ -534,8 +535,8 @@
   padding-top: 0;
   padding-bottom: 0;
   border-bottom: 2px solid #838080;
-  width: 96.4%;
-  margin-left: 2.6em
+  width: 100%;
+  /* margin-left: 2.6em */
 }
 
 .select-bars {
@@ -680,7 +681,7 @@
 .external {
   border: 1px solid #838080;
   /* margin-left: 2.6em !important; */
-  width: 94.4%
+  width: 100%
 }
 
 .col-content {
@@ -728,7 +729,7 @@
 
 .col-content .price:before {
   content: '$';
-  margin-right: -3%
+  margin-right: 0%
 }
 
 .col-content .price:after {
@@ -1040,7 +1041,7 @@
   }
 
   .trip {
-    width: 94.2% !important
+    width: 100% !important
   }
 
   .view-results .no-margin-lr {
@@ -1088,12 +1089,23 @@
     padding-left: 10px
   }
 }
-
-@media screen and (max-width:769px) {
+@media screen and (max-width:992px) {
   .svg-hidden {
-    width: 0 !important
+    /* width: 0 !important; */
+    transform: rotate(90deg);
+    height:210px;
+    width: 210px !important;
   }
-
+  .responsive-line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .next-step-button{
+    width:100%;
+  }
+}
+@media screen and (max-width:769px) {
   .col-lg-5.ml-auto.mr-0 {
     margin-bottom: 24px
   }
@@ -1178,7 +1190,16 @@
   .trip {
     width: 89% !important
   }
-
+  .svg-hidden {
+    /* width: 0 !important; */
+    transform: rotate(90deg);
+    height:200px;
+    width: 100px !important;
+  }
+  .next-step-button{
+    width:90%;
+    margin:0;
+  }
   .amenities-wrap {
     width: 100%
   }
@@ -1463,7 +1484,7 @@
 @media screen and (max-width:992px) {
   .thumb-details .col-content .r-title {
     font-size: 18px;
-    margin-bottom: 11px;
+    /* margin-bottom: 11px; */
     width: 100%;
     height: auto
   }

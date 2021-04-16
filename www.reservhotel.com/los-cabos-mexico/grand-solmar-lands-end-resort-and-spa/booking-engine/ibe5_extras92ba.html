@@ -553,10 +553,13 @@
     }
 
     .flightclassouter {
-      width: 32%;
+      width: 31%;
       float: left;
       border: 2px solid #e2dfdf;
       margin: 35px 3px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .flightclassinner {
@@ -566,7 +569,12 @@
       padding:1rem;
       text-align: center;
       font-size: 14px;
-      font-weight: 700
+      font-weight: 700;
+      min-height: 150px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
 
     .flightclassinner span {
@@ -891,6 +899,7 @@
       .flightclassinner {
         float: initial;
         width: 100%;
+        min-height: 170px;
         /* margin: 30px 0; */
       }
 
@@ -3012,7 +3021,7 @@
 
 
         $('#selected_flights').html("<li class='col-lg-5 ml-auto mr-0'>" + $(selected_departure).html() + "</li>" +
-          '<svg class="svg-hidden" height="210" width="50"><line x1="0" y1="105" x2="50" y2="105" style="stroke:rgb(230,230,230);stroke-width:2" /></svg>'
+          '<svg class="svg-hidden" height="210" width="50"><line x1="0" y1="105" x2="210" y2="105" style="stroke:rgb(230,230,230);stroke-width:2" /></svg>'
         );
         $('#selected_flights').html($('#selected_flights').html() + "<li class='col-lg-5 ml-0 mr-auto'>" + $('.opt' +
           opt).html() + "</li>");
@@ -3352,23 +3361,23 @@
             </div>
             <div class="flights-wrap">
               <div class="flight-list-box perfect-scroll">
-                <ul class="flight-list row" id="selected_flights"></ul>
+                <ul class="flight-list row responsive-line" id="selected_flights"></ul>
               </div>
               <div class="flight-filter-box-wrap">
                 <div class="flight-filter-box">
                   <div class="flight-filter-inner">
                     <div class="group">
                       <div class="row form-content" style="margin-top: 40px;">
-                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-content other_options">
+                        <div class="col-md-12 col-md-12 col-lg-12 col-xl-12 col-content other_options">
                         </div>
-                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 col-content">
+                        <div class="col-md-12 col-md-4 col-lg-4 col-xl-4 col-content">
                           <a class="btn-reset btn-blue mb-2" href="javascript:void(0)"
                             onClick="$('#departure_div').show();$('#return_div').hide();resetFilter('D');reset=1;updateTotal();"
                             style="width:50%"><i class="fa fa-arrow-left"></i> SELECT ANOTHER FLIGHT</a>
                         </div>
-                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 col-content">
+                        <div class="col-md-12 col-md-4 col-lg-4 col-xl-4 col-content">
                         </div>
-                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 col-content">
+                        <div class="col-md-12 col-md-4 col-lg-4 col-xl-4 col-content">
                           <button type="button" id="next-step-2" onClick="$('#next-step').click();"
                             class="btn-gold btn-skip-extras enabled">Review &amp; Checkout <i
                               class="fa fa-arrow-right"></i></button>
@@ -14433,7 +14442,7 @@ economy">Economy
           <input type="hidden" name="fareclass" value="E">
           <input type="hidden" id="source" name="source" value="FL">
           <input type="hidden" name="r" id="r" value="">
-          <p class="center"><input type="submit" value="Next Step" id="next-step" class="btn-gold enabled" /></p>
+          <p class="center"><input type="submit" value="Next Step" id="next-step" class="btn-gold enabled next-step-button"/></p>
         </form>
       </div>
     </div>
