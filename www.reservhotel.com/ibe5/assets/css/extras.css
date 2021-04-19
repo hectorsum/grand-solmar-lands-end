@@ -134,7 +134,7 @@
 
 .amen_button {
   float: right;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   font-weight: 700 !important;
   font-family: FiraSans-Medium !important;
   font-size: 15.16px !important;
@@ -829,12 +829,16 @@
 .col-content .flight-airline-logo {
   width: 100%;
   margin-right: 0%;
-  float: left
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .col-content .flight-airline-logo img {
   width: 100%;
-  border: 1px solid #fff
+  border: 1px solid #fff;
+  max-width: 70%;
 }
 
 .col-content .flight-name-text {
@@ -1497,15 +1501,17 @@
 }
 
 .thumb-details .espaciado {
-  margin-bottom: 18px;
-  margin-top: 4px
+  /* margin-bottom: 18px;
+  margin-top: 4px */
 }
 
 .thumb-details .img-size1 {
-  width: 100%;
-  max-height: 200px;
+  /* width: 100%; */
+  /* max-height: 200px; */
   padding: 15px 0
 }
+
+
 
 @media screen and (max-width:992px) {
   .thumb-details .img-size {
@@ -1514,8 +1520,8 @@
   }
 
   .thumb-details .img-size1 {
-    height: 230px;
-    padding: 3px 0
+    /* height: 230px; */
+    /* padding: 3px 0 */
   }
 }
 
@@ -1541,26 +1547,26 @@
 
 @media screen and (max-width:800px) and (min-width:450px) {
   .alt-q {
-    margin-top: -35px;
-    margin-right: -1px
+    /* margin-top: -35px;
+    margin-right: -1px */
   }
 
   .btn-es {
-    margin-bottom: 8px !important;
-    margin-top: -10px !important
+    /* margin-bottom: 8px !important;
+    margin-top: -10px !important */
   }
 }
 
 @media screen and (max-width:992px) and (min-width:680px) {
   .alt-q {
-    margin-top: -30px;
-    margin-right: 27px
+    /* margin-top: -30px;
+    margin-right: 27px */
   }
 
   .btn-es {
-    margin-bottom: 8px !important;
+    /* margin-bottom: 8px !important;
     margin-left: -51px;
-    margin-top: -41px !important
+    margin-top: -41px !important */
   }
 }
 

@@ -444,6 +444,7 @@
     }
 
     .flightnamedetails {
+      text-align:left;
       width: 100%;
       float: left;
       color: #303030;
@@ -930,11 +931,37 @@
     }
 
     @media (max-width:768px) {
+      .flightnamedetails{
+        text-align:center;
+      }
+      .flightdatetopmain{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+      }
+      .flightsdetails{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 270px;
+      }
+      .flightsdetails .f15px{
+        font: 22px firasans-semibold; 
+      }
       .returns .rdivs2 {
         padding-left: 50px;
       }
       .flighttakeoff {
-          width: 10%;
+        width: 10%;
+        min-width: 35px;
+        min-height: 35px;
+      }
+      .takeoffdate{
+        font-size: 18px;
+      }
+      .takeoffbottom{
+        font-size: 18px;
       }
       .fbutton {
         margin-top: 10px;
@@ -965,9 +992,9 @@
         font: 33.25px 'FiraSans-Light';
       }
 
-      .flightclassouter:nth-child(3) {
+      /* .flightclassouter:nth-child(3) {
         display: none;
-      }
+      } */
 
       #bodymain {
         width: 100%
@@ -1059,7 +1086,7 @@
       }
 
       .flightclassouter {
-        width: 48%;
+        width: 32%;
         margin-top: 23px
       }
 
@@ -1077,7 +1104,8 @@
       }
 
       .takeoffmain {
-        width: 85%;
+        width: auto;
+        min-width: 250px;
         margin: 0
       }
 
@@ -1089,11 +1117,16 @@
         width: 5%;
         float: left;
         margin-left: 0;
-        margin-right: 5px
+        /* margin-right: 5px; */
+        display:flex;
+        align-items: center;
+        justify-content: center;
       }
 
+
       .takeoffmain.timedurationtxt {
-        width: 89%;
+        width: auto;
+        min-width:250px;
         float: left;
         margin-left: 4px;
       }
@@ -1187,6 +1220,43 @@
 
       .rdivs3 .flightclassouter {
         width: 100% !important;
+      }
+      .flightclassouter:nth-child(3) {
+        display: none;
+      }
+      .flightclassouter{
+        width:48%;
+      }
+      .flightnamedetails {
+        text-align: left;
+      }
+      .flightsdetails{
+        height:initial;
+      }
+      .flightsdetails .f15px {
+        font: 20px firasans-semibold;
+      }
+      .takeoffdate {
+        color: #474746;
+        font-size: 15px;
+        margin-bottom: 3px;
+      }
+      .takeoffbottom{
+        font-size:15px;
+      }
+      .flighttakeoff {
+        width: 10%;
+      }
+      .takeoffmain{
+        min-width:initial;
+        width: 85%;
+        margin: 0;
+      }
+      .takeoffmain.timedurationtxt{
+        min-width: initial;
+      }
+      .flightdatetopmain{
+        justify-content:start;
       }
     }
 
@@ -1432,7 +1502,7 @@
         width: 100%;
       }
       .flighttakeoff {
-        width: 15%;
+        width: 10%;
       }
       .flightsdetails{
         padding: 0rem 1rem;
@@ -14179,11 +14249,11 @@ economy">Economy
             <div class="row external no-margin-lr borderblack thumb-details">
               <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-content mr">
                 <div class="row no-margin-lr">
-                  <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                  <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
                     <img src="../../../html/airlink/Images/amenities/Insurance.jpg" alt="Trip Protection"
                       class="img-size1">
                   </div>
-                  <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 mr mr1">
+                  <div class="col-6 col-sm-6 col-md-6 col-lg-9 col-xl-9 mr mr1">
                     <div class="row no-margin-lr">
                       <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 col-content" style="display:table;">
                         <div class="r-title">
@@ -14220,7 +14290,7 @@ economy">Economy
                               Per Person
                             </div>
                           </div>
-                          <div class="col-6 col-sm-4 col-md-4 col-lg-12 col-xl-12 col-content">
+                          <div class="col-6 col-sm-4 col-md-4 col-lg-12 col-xl-12 col-content d-flex justify-content-center align-items-center">
                             <div class="d-flex flex-row justify-content-center align-items-center price-total alt-q">
                               <span class="amenity-price instot">149.95</span>
                             </div>
