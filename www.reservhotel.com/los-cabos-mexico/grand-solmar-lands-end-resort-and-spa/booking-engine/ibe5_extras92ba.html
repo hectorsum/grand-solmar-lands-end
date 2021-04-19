@@ -60,6 +60,12 @@
     .nomargintop {
       margin:0 !important;
     }
+    .reservhotel-logo{
+      width:20%;
+    }
+    .returns .rdivs2 {
+      padding-left: 50px;
+    }
     .popup-flights{
       width:50%;
       float:left;
@@ -915,7 +921,7 @@
       }
 
       .filterdepart {
-        width: 47%
+        width: 50%
       }
 
       .resetfilter {
@@ -923,7 +929,10 @@
       }
     }
 
-    @media (max-width:767px) {
+    @media (max-width:768px) {
+      .returns .rdivs2 {
+        padding-left: 50px;
+      }
       .flighttakeoff {
           width: 10%;
       }
@@ -1364,9 +1373,13 @@
     }
 
     @media screen and (max-width: 768px) {
+      .reservhotel-logo{
+        width:40%;
+      }
       .stops {
         /* background-color: red; */
-        /* display: inline-flex; */
+        display: flex;
+        flex-direction:column;
         width: 100%;
       }
       .popup-flights{
@@ -3431,13 +3444,13 @@
                                     <p>Number of Stops</p>
                                   </div>
                                   <div class="number-of-stops stops">
-                                    <label class="col-md-12"><input type="radio" id="stopsall" name="dstops"
+                                    <label class="container"><input type="radio" id="stopsall" name="dstops"
                                         onClick="filter('D');" checked /> All</label>
-                                    <label class="col-md-3 nonstop" style="display:none;"><input type="radio"
+                                    <label class="container nonstop" style="display:none;"><input type="radio"
                                         name="dstops" id="stops0" onClick="filter('D');" /> Nonstop</label>
-                                    <label class="col-md-12 1stop" style="display:none;padding-right: 5px;"><input
+                                    <label class="container 1stop" style="display:none;padding-right: 5px;"><input
                                         type="radio" name="dstops" id="stops1" onClick="filter('D');" /> 1 Stop</label>
-                                    <label class="col-md-12 2stop" style="display:block;"><input type="radio"
+                                    <label class="container 2stop" style="display:block;"><input type="radio"
                                         name="dstops" id="stops2" onClick="filter('D');" /> 2+
                                       Stops</label>
                                   </div>
@@ -5578,13 +5591,13 @@ economy">Economy
                                 <p>Number of Stops</p>
                               </div>
                               <div class="number-of-stops stops">
-                                <label class="col-md-2"><input type="radio" name="rstops" id="rstopsall"
+                                <label class="container"><input type="radio" name="rstops" id="rstopsall"
                                     onClick="filter('R');" checked /> All</label>
-                                <label class="col-md-3" style="padding-left: 5px;"><input type="radio" name="rstops"
+                                <label class="container"><input type="radio" name="rstops"
                                     id="rstops0" onClick="filter('R');" /> Nonstop</label>
-                                <label class="col-md-2" style="padding-left: 5px;padding-right: 5px;"><input
+                                <label class="container"><input
                                     type="radio" name="rstops" id="rstops1" onClick="filter('R');" /> 1 Stop</label>
-                                <label class="col-md-3" style="padding-left: 5px;"><input type="radio" name="rstops"
+                                <label class="container"><input type="radio" name="rstops"
                                     id="rstops2" onClick="filter('R');" /> 2+ Stops</label>
                               </div>
                             </div>
@@ -14473,7 +14486,7 @@ economy">Economy
         </div>
       </div>
       Powered by <br><a target="_blank" href="https://www.reservhotel.com/"><img
-          src="../../../ibe4/assets/images/rhlogo.png" alt="ReservHotel Logo" style="width:50%;" /></a>
+          src="../../../ibe4/assets/images/rhlogo.png" alt="ReservHotel Logo" class="reservhotel-logo"/></a>
     </footer>
     <div class="pop-up" id="hotel-policies" style="max-width:500px;">
       <h3 class="pop-up-title">Hotel Policies</h3>
