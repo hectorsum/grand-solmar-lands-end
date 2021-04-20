@@ -53,7 +53,9 @@
     }
   </script>
   <style type="text/css">
-    
+    .flightclassouter:active {
+      box-shadow: 0 0 5px -1px rgb(0 0 0 / 60%) !important;
+    }
     .navbar-toggler {
       width: 45px;
     }
@@ -916,7 +918,7 @@
       }
 
       .flightsdetails {
-        width: 60%;
+        width: auto;
         margin-top: 23px;
         /* margin-left: 3px */
       }
@@ -928,7 +930,7 @@
       .flightclassinner {
         float: initial;
         width: 100%;
-        min-height: 170px;
+        /* min-height: 170px; */
         /* margin: 30px 0; */
       }
 
@@ -1284,7 +1286,7 @@
         display: none;
       }
       .flightclassouter{
-        width:48%;
+        width:48% !important;
       }
       .flightnamedetails {
         text-align: left;
@@ -1499,6 +1501,9 @@
     }
 
     @media screen and (max-width: 768px) {
+      .flightclassinner{
+        min-height:100px !important;
+      }
       .reservhotel-logo{
         width:40%;
       }
@@ -1539,6 +1544,27 @@
       }
     }
     @media screen and (max-width: 1024px) {
+      .fcrhov:hover,
+      .fcrhov:hover .price,
+      .fcrhov:hover .price-detail,
+      .fcrhov:hover .notavail {
+        color: initial !important;
+        background-color: transparent !important;
+      }
+      .flightclassouter{
+        background: radial-gradient(#fff 5%, #e2e2e2 95%) !important;
+        border-radius: 8px !important;
+        border: none !important;
+        box-shadow: 0 0 5px -1px rgb(0 0 0 / 20%) !important;
+      }
+      .flightclassinner {
+        float: initial !important;
+        width: 100% !important;
+        min-height: 170px;
+        border: 1px solid #CCC !important;
+        border-radius: 8px !important;
+        color: #444 !important;
+      }
       #selected_flights .flightnamemain, #selected_flights .flightsdetails {
           margin-top: 0px;
           display: flex;
@@ -1551,6 +1577,9 @@
         flex-direction: column;
         justify-content: center;
       }
+      /* .flightsdetails div{
+        width: auto;
+      } */
     }
     @media screen and (max-width: 1000px) {
       body {
@@ -1621,7 +1650,7 @@
     }
     @media screen and (max-width: 380px) {
       .flightclassouter {
-        width: 47%;
+        width: 47% !important;
       }
     }
     @media screen and (max-width: 280px) {
@@ -1824,15 +1853,15 @@
     .flightclassinner .price,
     .flightclassinner .price-detail,
     .altairline {
-      color: #000000 !important;
+      color: #000000;
     }
 
     .fcrhov:hover,
     .fcrhov:hover .price,
     .fcrhov:hover .price-detail,
     .fcrhov:hover .notavail {
-      color: #fff !important;
-      background-color: #000 !important;
+      color: #fff;
+      background-color: #000;
       transition-property: color;
       transition-property: background-color;
       transition: color ease 0.3s;
@@ -3196,7 +3225,7 @@
         updateTotal();
 
 
-        $('#selected_flights').html("<li class='col-lg-5 mr-0'>" + $(selected_departure).html() + "</li>" +
+        $('#selected_flights').html("<li class='col-lg-5 mr-0 d-flex justify-content-center align-items-center'>" + $(selected_departure).html() + "</li>" +
           '<svg class="svg-hidden" height="210" width="50"><line x1="0" y1="50%" x2="210" y2="50%" style="stroke:rgb(230,230,230);stroke-width:2" /></svg>'
         );
         $('#selected_flights').html($('#selected_flights').html() + "<li class='col-lg-5 ml-0'>" + $('.opt' +
