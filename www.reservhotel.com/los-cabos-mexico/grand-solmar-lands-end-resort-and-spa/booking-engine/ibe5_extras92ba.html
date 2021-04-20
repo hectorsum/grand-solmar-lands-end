@@ -53,6 +53,9 @@
     }
   </script>
   <style type="text/css">
+    .clock-icon{
+      width:18px;
+    }
     .carousel-control-next,
     .carousel-control-prev {
       width: 12% !important;
@@ -428,8 +431,9 @@
       align-items: center;
       justify-content: center;
       float: left;
-      margin-top: 30px;
+      /* margin-top: 30px; */
       font: 12.13px 'FiraSans-Regular';
+      text-align:center;
     }
 
     .flightclass span {
@@ -456,7 +460,7 @@
     .flightdatetopmain {
       width: 100%;
       float: left;
-      margin-bottom: 5px
+      /* margin-bottom: 5px; */
     }
 
     .flighttakeoff {
@@ -486,7 +490,7 @@
       width: 100%;
       float: left;
       /* font-size: 13.64px; */
-      font-size: 15px;
+      font-size: 14px;
       color: #474746
     }
 
@@ -847,6 +851,9 @@
     }
 
     @media (max-width:980px) {
+      .thumb-details .img-size1{
+        width:100%;
+      }
       .returnsdiv {
         width: 100% !important;
       }
@@ -1242,7 +1249,7 @@
         margin-bottom: 3px;
       }
       .takeoffbottom{
-        font-size:15px;
+        font-size:14px;
       }
       .flighttakeoff {
         width: 10%;
@@ -1448,7 +1455,7 @@
       }
       .stops {
         /* background-color: red; */
-        display: flex;
+        /* display: flex; */
         flex-direction:column;
         width: 100%;
       }
@@ -1505,7 +1512,17 @@
         width: 10%;
       }
       .flightsdetails{
+        min-height: 180px;
         padding: 0rem 1rem;
+        display: flex;
+        justify-content: space-between;
+      }
+      .flightnamemain{
+        min-height: 180px;
+        /* background: lightblue; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
     }
     
@@ -1645,7 +1662,7 @@
     #next-step-2.enabled,
     #ch_submit,
     .container-imgun {
-      background-color: #000000 !important
+      background-color: #181818 !important
     }
 
     .rate-types-list>li .rate-type .rate-type-btn,
@@ -1668,22 +1685,22 @@
     }
 
     .rate-types-list>li .rate-type.selected .price .rate-type-btn {
-      background: #000000 url('../../../ibe5/assets/images/right-arrow-selected.png') no-repeat 92% center !important;
+      background: #181818 url('../../../ibe5/assets/images/right-arrow-selected.png') no-repeat 92% center !important;
     }
 
     .travel-summary-box.active,
     .travel-summary-box:hover {
-      background: #000000 !important;
+      background: #181818 !important;
     }
 
     .compare-btn2:hover,
     .select-room-btn2:hover {
-      background: #000000;
+      background: #181818;
     }
 
     .pop-up-title-match,
     .btn-gold {
-      background: #000000 !important;
+      background: #181818 !important;
       color: #ffffff !important
     }
 
@@ -1693,7 +1710,8 @@
     #next-step.enabled:hover,
     #next-step-2.enabled:hover,
     .select-room-btn2:hover {
-      background: #000000 !important;
+      background: #181818 !important;
+      transition: all ease 0.3s;
       filter: brightness(115%) !important;
     }
 
@@ -1709,7 +1727,7 @@
 
     header#header>div.top-nav .travel-summary-box,
     header#header>div.top-nav .travel-summary-box>.summary {
-      background-color: #000000;
+      background-color: #181818;
       color: #FFFFFF !important;
     }
 
@@ -1742,7 +1760,10 @@
     .fcrhov:hover .price-detail,
     .fcrhov:hover .notavail {
       color: #fff !important;
-      background-color: #000000 !important;
+      background-color: #181818 !important;
+      transition-property: color;
+      transition-property: background-color;
+      transition: color ease 0.3s;
       cursor: pointer;
     }
 
@@ -3663,7 +3684,7 @@
                           </div>
                           <div class="flightdatetopmain">
                             <div class="flighttakeoff timedurationicon">
-                              <i class="fa fa-clock-o" aria-hidden="true"></i>
+                              <i class="fa fa-clock-o clock-icon" aria-hidden="true"></i>
                             </div>
                             <div class="takeoffmain timedurationtxt">
                               <div class="takeoffbottom">
@@ -3767,7 +3788,7 @@ business">Business Class
                           </div>
                           <div class="flightdatetopmain">
                             <div class="flighttakeoff timedurationicon">
-                              <i class="fa fa-clock-o" aria-hidden="true"></i>
+                              <i class="fa fa-clock-o clock-icon" aria-hidden="true"></i>
                             </div>
                             <div class="takeoffmain timedurationtxt">
                               <div class="takeoffbottom">
@@ -3874,7 +3895,7 @@ business">Business Class
                           </div>
                           <div class="flightdatetopmain">
                             <div class="flighttakeoff timedurationicon">
-                              <i class="fa fa-clock-o" aria-hidden="true"></i>
+                              <i class="fa fa-clock-o clock-icon" aria-hidden="true"></i>
                             </div>
                             <div class="takeoffmain timedurationtxt">
                               <div class="takeoffbottom">
@@ -3980,7 +4001,7 @@ premium">Premium Economy
                           </div>
                           <div class="flightdatetopmain">
                             <div class="flighttakeoff timedurationicon">
-                              <i class="fa fa-clock-o" aria-hidden="true"></i>
+                              <i class="fa fa-clock-o clock-icon" aria-hidden="true"></i>
                             </div>
                             <div class="takeoffmain timedurationtxt">
                               <div class="takeoffbottom">
@@ -4076,7 +4097,7 @@ economy">Economy
                           </div>
                           <div class="flightdatetopmain">
                             <div class="flighttakeoff timedurationicon">
-                              <i class="fa fa-clock-o" aria-hidden="true"></i>
+                              <i class="fa fa-clock-o clock-icon" aria-hidden="true"></i>
                             </div>
                             <div class="takeoffmain timedurationtxt">
                               <div class="takeoffbottom">
@@ -4172,7 +4193,7 @@ economy">Economy
                           </div>
                           <div class="flightdatetopmain">
                             <div class="flighttakeoff timedurationicon">
-                              <i class="fa fa-clock-o" aria-hidden="true"></i>
+                              <i class="fa fa-clock-o clock-icon" aria-hidden="true"></i>
                             </div>
                             <div class="takeoffmain timedurationtxt">
                               <div class="takeoffbottom">
@@ -4271,7 +4292,7 @@ economy">Economy
                           </div>
                           <div class="flightdatetopmain">
                             <div class="flighttakeoff timedurationicon">
-                              <i class="fa fa-clock-o" aria-hidden="true"></i>
+                              <i class="fa fa-clock-o clock-icon" aria-hidden="true"></i>
                             </div>
                             <div class="takeoffmain timedurationtxt">
                               <div class="takeoffbottom">
@@ -4375,7 +4396,7 @@ premium">Premium Economy
                           </div>
                           <div class="flightdatetopmain">
                             <div class="flighttakeoff timedurationicon">
-                              <i class="fa fa-clock-o" aria-hidden="true"></i>
+                              <i class="fa fa-clock-o clock-icon" aria-hidden="true"></i>
                             </div>
                             <div class="takeoffmain timedurationtxt">
                               <div class="takeoffbottom">
@@ -4476,7 +4497,7 @@ business">Business Class
                           </div>
                           <div class="flightdatetopmain">
                             <div class="flighttakeoff timedurationicon">
-                              <i class="fa fa-clock-o" aria-hidden="true"></i>
+                              <i class="fa fa-clock-o clock-icon" aria-hidden="true"></i>
                             </div>
                             <div class="takeoffmain timedurationtxt">
                               <div class="takeoffbottom">
@@ -4577,7 +4598,7 @@ premium">Premium Economy
                           </div>
                           <div class="flightdatetopmain">
                             <div class="flighttakeoff timedurationicon">
-                              <i class="fa fa-clock-o" aria-hidden="true"></i>
+                              <i class="fa fa-clock-o clock-icon" aria-hidden="true"></i>
                             </div>
                             <div class="takeoffmain timedurationtxt">
                               <div class="takeoffbottom">
@@ -4678,7 +4699,7 @@ premium">Premium Economy
                           </div>
                           <div class="flightdatetopmain">
                             <div class="flighttakeoff timedurationicon">
-                              <i class="fa fa-clock-o" aria-hidden="true"></i>
+                              <i class="fa fa-clock-o clock-icon" aria-hidden="true"></i>
                             </div>
                             <div class="takeoffmain timedurationtxt">
                               <div class="takeoffbottom">
@@ -4774,7 +4795,7 @@ economy">Economy
                           </div>
                           <div class="flightdatetopmain">
                             <div class="flighttakeoff timedurationicon">
-                              <i class="fa fa-clock-o" aria-hidden="true"></i>
+                              <i class="fa fa-clock-o clock-icon" aria-hidden="true"></i>
                             </div>
                             <div class="takeoffmain timedurationtxt">
                               <div class="takeoffbottom">
@@ -4875,7 +4896,7 @@ premium">Premium Economy
                           </div>
                           <div class="flightdatetopmain">
                             <div class="flighttakeoff timedurationicon">
-                              <i class="fa fa-clock-o" aria-hidden="true"></i>
+                              <i class="fa fa-clock-o clock-icon" aria-hidden="true"></i>
                             </div>
                             <div class="takeoffmain timedurationtxt">
                               <div class="takeoffbottom">
@@ -4979,7 +5000,7 @@ premium">Premium Economy
                           </div>
                           <div class="flightdatetopmain">
                             <div class="flighttakeoff timedurationicon">
-                              <i class="fa fa-clock-o" aria-hidden="true"></i>
+                              <i class="fa fa-clock-o clock-icon" aria-hidden="true"></i>
                             </div>
                             <div class="takeoffmain timedurationtxt">
                               <div class="takeoffbottom">
@@ -5075,7 +5096,7 @@ economy">Economy
                           </div>
                           <div class="flightdatetopmain">
                             <div class="flighttakeoff timedurationicon">
-                              <i class="fa fa-clock-o" aria-hidden="true"></i>
+                              <i class="fa fa-clock-o clock-icon" aria-hidden="true"></i>
                             </div>
                             <div class="takeoffmain timedurationtxt">
                               <div class="takeoffbottom">
@@ -5176,7 +5197,7 @@ first">First Class
                           </div>
                           <div class="flightdatetopmain">
                             <div class="flighttakeoff timedurationicon">
-                              <i class="fa fa-clock-o" aria-hidden="true"></i>
+                              <i class="fa fa-clock-o clock-icon" aria-hidden="true"></i>
                             </div>
                             <div class="takeoffmain timedurationtxt">
                               <div class="takeoffbottom">
@@ -5277,7 +5298,7 @@ first">First Class
                           </div>
                           <div class="flightdatetopmain">
                             <div class="flighttakeoff timedurationicon">
-                              <i class="fa fa-clock-o" aria-hidden="true"></i>
+                              <i class="fa fa-clock-o clock-icon" aria-hidden="true"></i>
                             </div>
                             <div class="takeoffmain timedurationtxt">
                               <div class="takeoffbottom">
@@ -5378,7 +5399,7 @@ first">First Class
                           </div>
                           <div class="flightdatetopmain">
                             <div class="flighttakeoff timedurationicon">
-                              <i class="fa fa-clock-o" aria-hidden="true"></i>
+                              <i class="fa fa-clock-o clock-icon" aria-hidden="true"></i>
                             </div>
                             <div class="takeoffmain timedurationtxt">
                               <div class="takeoffbottom">
@@ -5479,7 +5500,7 @@ first">First Class
                           </div>
                           <div class="flightdatetopmain">
                             <div class="flighttakeoff timedurationicon">
-                              <i class="fa fa-clock-o" aria-hidden="true"></i>
+                              <i class="fa fa-clock-o clock-icon" aria-hidden="true"></i>
                             </div>
                             <div class="takeoffmain timedurationtxt">
                               <div class="takeoffbottom">
@@ -5580,7 +5601,7 @@ first">First Class
                           </div>
                           <div class="flightdatetopmain">
                             <div class="flighttakeoff timedurationicon">
-                              <i class="fa fa-clock-o" aria-hidden="true"></i>
+                              <i class="fa fa-clock-o clock-icon" aria-hidden="true"></i>
                             </div>
                             <div class="takeoffmain timedurationtxt">
                               <div class="takeoffbottom">
@@ -14249,11 +14270,11 @@ economy">Economy
             <div class="row external no-margin-lr borderblack thumb-details">
               <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-content mr">
                 <div class="row no-margin-lr">
-                  <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                  <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
                     <img src="../../../html/airlink/Images/amenities/Insurance.jpg" alt="Trip Protection"
                       class="img-size1">
                   </div>
-                  <div class="col-6 col-sm-6 col-md-6 col-lg-9 col-xl-9 mr mr1">
+                  <div class="col-12 col-sm-6 col-md-6 col-lg-9 col-xl-9 mr mr1">
                     <div class="row no-margin-lr">
                       <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 col-content" style="display:table;">
                         <div class="r-title">
@@ -14280,7 +14301,7 @@ economy">Economy
                       </div>
                       <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 col-content">
                         <div class="row no-margin-lr">
-                          <div class="col-6 col-sm-4 col-md-4 col-lg-12 col-xl-12 col-content espaciado p-person">
+                          <div class="col-4 col-sm-4 col-md-4 col-lg-12 col-xl-12 col-content espaciado p-person">
                             <div
                               class="d-flex flex-row justify-content-center align-items-center col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-content price">
                               <span class="price-per inspp">74.97 </span>
@@ -14290,13 +14311,13 @@ economy">Economy
                               Per Person
                             </div>
                           </div>
-                          <div class="col-6 col-sm-4 col-md-4 col-lg-12 col-xl-12 col-content d-flex justify-content-center align-items-center">
+                          <div class="col-4 col-sm-4 col-md-4 col-lg-12 col-xl-12 col-content d-flex justify-content-center align-items-center">
                             <div class="d-flex flex-row justify-content-center align-items-center price-total alt-q">
                               <span class="amenity-price instot">149.95</span>
                             </div>
                           </div>
                           <div
-                            class="d-flex flex-row justify-content-center align-items-center col-12 col-sm-4 col-md-4 col-lg-12 col-xl-12 col-content espaciado btn-es"
+                            class="d-flex flex-row justify-content-center align-items-center col-4 col-sm-4 col-md-4 col-lg-12 col-xl-12 col-content espaciado btn-es"
                             style="text-align:right;">
                             <span class="selected hidden">Select</span>&nbsp;&nbsp;&nbsp; <input
                               class="hidden amen_check_class" type="checkbox" amen="ins" id="ins" name="amenity"

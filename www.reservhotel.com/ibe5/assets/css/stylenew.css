@@ -5537,17 +5537,17 @@ header#header>.sec-nav>ul>li a:hover {
 
 .fa-fighter-jet,
 .fa-fighter-jet-hotel {
-  content: url(../images/datedeparture_icon.png)
+  content: url(../images/datedeparture_icon.svg)
 }
-
+  
 .fa-plane,
 .fa-plane-hotel {
-  content: url(../images/datearrival_icon.png)
+  content: url(../images/datearrival_icon.svg)
 }
 
 .fa-clock-o,
 .fa-clock-o-hotel {
-  content: url(../images/time_icon.png)
+  content: url(../images/time_icon.svg)
 }
 
 .fa-cruise {

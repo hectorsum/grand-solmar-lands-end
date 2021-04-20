@@ -371,7 +371,7 @@
   border-radius: 2px !important;
   float: right;
   width: 85%;
-  margin-bottom: 4%;
+  /* margin-bottom: 4%; */
   font-style: normal;
   text-decoration: none;
   text-transform: capitalize
@@ -953,7 +953,17 @@
     width: 63%;
     height: 50%
   }
-
+  #next-step.enabled,
+  #next-step-2.enabled {
+    background: #f3dfa4 !important;
+    width: auto;
+    width:90%;
+    margin:0;
+    color: #2f2f2f !important;
+    border-radius: 1px;
+    font: 15.16px firasans-medium;
+    border: none
+  }
   .col-content .r-content {
     font-family: firasans-light;
     margin-top: 2%;
@@ -1289,7 +1299,7 @@
   .flights-wrap .flight-list li {
     /* margin-left: 1.45em !important; */
     width: 100%;
-    padding: 2rem 0.5rem 0rem;
+    padding: 2rem 0.5rem;
   }
 
   .col-two-third.flight-information {
@@ -1426,7 +1436,7 @@
   }
 
   .container {
-    max-width: initial
+    max-width: initial;
   }
 }
 
@@ -1536,8 +1546,8 @@
 
 @media screen and (max-width:992px) {
   .btn-s {
-    margin-top: -12px !important;
-    margin-left: -10px
+    /* margin-top: -12px !important;
+    margin-left: -10px */
   }
 
   .p-person {
