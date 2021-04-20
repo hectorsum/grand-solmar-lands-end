@@ -167,6 +167,7 @@
   padding: 22px;
   border: 2px solid #e2dfdf !important;
   margin:0;
+  display:flex;
 }
 
 .flights-wrap .flight-filter-box {
@@ -272,7 +273,7 @@
 }
 
 .flights-wrap .flight-filter-box .flight-filter-inner .group .form-content {
-  padding: 10px 23px
+  /* padding: 10px 23px; */
 }
 
 .flights-wrap .flight-list li .flight-info .flight-name {
@@ -455,9 +456,9 @@
 
 .btn-reset,
 .btn-skip-extras {
-  width: 100% !important;
+  width: 100%;
   float: left;
-  padding: 15px 10% !important;
+  padding: 18px 32px !important;
   margin-top: 0%;
   font: 15.16px firasans-medium;
   background: #8cd4cb;
@@ -572,7 +573,7 @@
 }
 
 #next-step {
-  margin-right: 2.7em;
+  /* margin-right: 2.7em; */
   padding-left: 1em;
   padding-right: 1em;
   border-radius: 1px;
@@ -592,7 +593,8 @@
   color: #2f2f2f !important;
   border-radius: 1px;
   font: 15.16px firasans-medium;
-  border: none
+  border: none;
+  padding: 18px 32px !important;
 }
 
 #next-step.enabled:hover,
@@ -864,7 +866,7 @@
 }
 
 .col-content i {
-  width: 30px;
+  width: auto;
   margin-bottom: -2px;
   margin-right: 5px
 }
@@ -956,8 +958,8 @@
   #next-step.enabled,
   #next-step-2.enabled {
     background: #f3dfa4 !important;
-    width: auto;
-    width:90%;
+    width: 100%;
+    /* width:100%; */
     margin:0;
     color: #2f2f2f !important;
     border-radius: 1px;
@@ -1107,8 +1109,8 @@
   .svg-hidden {
     /* width: 0 !important; */
     transform: rotate(90deg);
-    height:210px;
-    width: 210px !important;
+    height:60px !important;
+    width: 60px !important;
   }
   .responsive-line{
     display: flex;
@@ -1207,8 +1209,8 @@
   .svg-hidden {
     /* width: 0 !important; */
     transform: rotate(90deg);
-    height:200px;
-    width: 100px !important;
+    /* height:100px; */
+    width: 60px !important;
   }
   .next-step-button{
     width:90%;
@@ -1319,7 +1321,7 @@
   }
 
   #next-step {
-    margin-right: 1.4em
+    /* margin-right: 1.4em */
   }
 
   #filter1 {

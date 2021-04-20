@@ -53,6 +53,10 @@
     }
   </script>
   <style type="text/css">
+    
+    .navbar-toggler {
+      width: 45px;
+    }
     .clock-icon{
       width:18px;
     }
@@ -405,12 +409,15 @@
 
     .flightdetailsmain {
       width: 50%;
-      float: left
+      float: left;
+      display: flex;
+      align-items: flex-end;
     }
 
     .flightnamemain {
       width: 25%;
       float: left;
+      
       /* margin-top: 25px; */
       /* padding-left: 5px; */
     }
@@ -420,7 +427,10 @@
       float: left;
       color: #04306d;
       font-size: 22px;
-      font-weight: 700
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .flightclass {
@@ -555,7 +565,9 @@
       margin-bottom: 10px;
       border-top: 1px solid #e2dfdf;
       width: 100%;
-      float: left
+      float: left;
+      display: flex;
+      align-items: center;
     }
 
     .flightclassbox {
@@ -851,6 +863,9 @@
     }
 
     @media (max-width:980px) {
+      .btn-reset, .btn-skip-extras{
+        margin-bottom: 0.5rem;
+      }
       .thumb-details .img-size1{
         width:100%;
       }
@@ -938,6 +953,18 @@
     }
 
     @media (max-width:768px) {
+      .hide-shopping-car{
+        display:none;
+      }
+      .flightname img{
+        width:70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .width-90{
+        width:90% !important;
+      }
       .flightnamedetails{
         text-align:center;
       }
@@ -1073,6 +1100,10 @@
       .flightnamemain {
         width: 25%;
         margin-left: 0;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
         /* margin-top: 23px */
       }
 
@@ -1093,7 +1124,7 @@
       }
 
       .flightclassouter {
-        width: 32%;
+        width: 31%;
         margin-top: 23px
       }
 
@@ -1104,10 +1135,11 @@
       }
 
       .flightsdetails {
-        width: 75%;
+        /* background: lightblue; */
+        width: 60%;
+        /* margin: 0; */
         /* margin-left: 10px */
-        margin: 0;
-        padding: 0rem 3rem;
+        /* padding: 0rem 3rem; */
       }
 
       .takeoffmain {
@@ -1155,7 +1187,10 @@
       .flightdetailsmain {
         width: 100%;
         float: left;
-        padding: 2rem 0.5rem 0rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* padding: 2rem 0.5rem 0rem; */
       }
 
       .takeoffdate span {
@@ -1221,6 +1256,23 @@
     }
 
     @media screen and (max-width: 500px) {
+      .button-next{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+      }
+      .button-next #next-step{
+        width: 90%;
+      }
+      div.all-wrap.fixed-width{
+        width: 100%;
+      }
+      .flightdetailsmain{
+        padding-top:2rem;
+      }
+      .flightname img{
+        width:100%;
+      }
       .returns .rdivs2 {
         padding-left: 0px;
       }
@@ -1273,10 +1325,7 @@
     }
 
     .flightname img {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      /* width: 100%; */
       /* background:red; */
     }
 
@@ -1455,9 +1504,12 @@
       }
       .stops {
         /* background-color: red; */
-        /* display: flex; */
-        flex-direction:column;
+        /* display: flex;
+        flex-direction:column; */
         width: 100%;
+      }
+      .flightdetailsbox{
+        display:initial;
       }
       .popup-flights{
         width:100%;
@@ -1486,7 +1538,20 @@
         width: 100% important;
       }
     }
-
+    @media screen and (max-width: 1024px) {
+      #selected_flights .flightnamemain, #selected_flights .flightsdetails {
+          margin-top: 0px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+      .flightsdetails {
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
     @media screen and (max-width: 1000px) {
       body {
         /*background : #FFFFFF !important;*/
@@ -1516,6 +1581,8 @@
         padding: 0rem 1rem;
         display: flex;
         justify-content: space-between;
+        width:70%;
+        margin:0;
       }
       .flightnamemain{
         min-height: 180px;
@@ -1550,6 +1617,11 @@
       .web_only,
       .compare-btn2 {
         display: none;
+      }
+    }
+    @media screen and (max-width: 380px) {
+      .flightclassouter {
+        width: 47%;
       }
     }
     @media screen and (max-width: 280px) {
@@ -1662,7 +1734,7 @@
     #next-step-2.enabled,
     #ch_submit,
     .container-imgun {
-      background-color: #181818 !important
+      background-color: #000 !important
     }
 
     .rate-types-list>li .rate-type .rate-type-btn,
@@ -1685,22 +1757,22 @@
     }
 
     .rate-types-list>li .rate-type.selected .price .rate-type-btn {
-      background: #181818 url('../../../ibe5/assets/images/right-arrow-selected.png') no-repeat 92% center !important;
+      background: #000 url('../../../ibe5/assets/images/right-arrow-selected.png') no-repeat 92% center !important;
     }
 
     .travel-summary-box.active,
     .travel-summary-box:hover {
-      background: #181818 !important;
+      background: #000 !important;
     }
 
     .compare-btn2:hover,
     .select-room-btn2:hover {
-      background: #181818;
+      background: #000;
     }
 
     .pop-up-title-match,
     .btn-gold {
-      background: #181818 !important;
+      background: #000 !important;
       color: #ffffff !important
     }
 
@@ -1710,7 +1782,7 @@
     #next-step.enabled:hover,
     #next-step-2.enabled:hover,
     .select-room-btn2:hover {
-      background: #181818 !important;
+      background: #000 !important;
       transition: all ease 0.3s;
       filter: brightness(115%) !important;
     }
@@ -1727,7 +1799,7 @@
 
     header#header>div.top-nav .travel-summary-box,
     header#header>div.top-nav .travel-summary-box>.summary {
-      background-color: #181818;
+      background-color: #000;
       color: #FFFFFF !important;
     }
 
@@ -1760,7 +1832,7 @@
     .fcrhov:hover .price-detail,
     .fcrhov:hover .notavail {
       color: #fff !important;
-      background-color: #181818 !important;
+      background-color: #000 !important;
       transition-property: color;
       transition-property: background-color;
       transition: color ease 0.3s;
@@ -3124,10 +3196,10 @@
         updateTotal();
 
 
-        $('#selected_flights').html("<li class='col-lg-5 ml-auto mr-0'>" + $(selected_departure).html() + "</li>" +
-          '<svg class="svg-hidden" height="210" width="50"><line x1="0" y1="105" x2="210" y2="105" style="stroke:rgb(230,230,230);stroke-width:2" /></svg>'
+        $('#selected_flights').html("<li class='col-lg-5 mr-0'>" + $(selected_departure).html() + "</li>" +
+          '<svg class="svg-hidden" height="210" width="50"><line x1="0" y1="50%" x2="210" y2="50%" style="stroke:rgb(230,230,230);stroke-width:2" /></svg>'
         );
-        $('#selected_flights').html($('#selected_flights').html() + "<li class='col-lg-5 ml-0 mr-auto'>" + $('.opt' +
+        $('#selected_flights').html($('#selected_flights').html() + "<li class='col-lg-5 ml-0'>" + $('.opt' +
           opt).html() + "</li>");
         $('#selected_flights').find(".flight-select").empty();
         $('#selected_flights').find(".flight-select-inner").hide();
@@ -3418,7 +3490,7 @@
         </div>
         <div class="col-sm-2 text-center hidden-xs-down hidden-sm-down">
         </div>
-        <div class="col-sm-5 text-center hidden-xs-down hidden-sm-down"
+        <div class="col-sm-5 text-center hide-shopping-car"
           style="padding-right:0px;    margin-left: -2px;">
           <div class="row" style="margin-top: 0px !important;">
             <div class="col-6 col-sm-6 offset-sm-6 trav-sum-div">
@@ -3465,25 +3537,24 @@
             </div>
             <div class="flights-wrap">
               <div class="flight-list-box perfect-scroll">
-                <ul class="flight-list row responsive-line" id="selected_flights"></ul>
+                <ul class="flight-list row responsive-line d-flex justify-content-center" id="selected_flights"></ul>
               </div>
               <div class="flight-filter-box-wrap">
                 <div class="flight-filter-box">
                   <div class="flight-filter-inner">
                     <div class="group">
-                      <div class="row form-content" style="margin-top: 40px;">
+                      <div class="row form-content d-flex justify-content-around">
                         <div class="col-md-12 col-md-12 col-lg-12 col-xl-12 col-content other_options">
                         </div>
-                        <div class="col-md-12 col-md-4 col-lg-4 col-xl-4 col-content">
-                          <a class="btn-reset btn-blue mb-2" href="javascript:void(0)"
-                            onClick="$('#departure_div').show();$('#return_div').hide();resetFilter('D');reset=1;updateTotal();"
-                            style="width:50%"><i class="fa fa-arrow-left"></i> SELECT ANOTHER FLIGHT</a>
+                        <div class="col-md-12 col-md-4 col-lg-4 col-xl-4 col-content d-flex justify-content-center align-items-center">
+                          <a class="btn-reset btn-blue width-90" href="javascript:void(0)"
+                            onClick="$('#departure_div').show();$('#return_div').hide();resetFilter('D');reset=1;updateTotal();">
+                            <i class="fa fa-arrow-left"></i> SELECT ANOTHER FLIGHT
+                          </a>
                         </div>
-                        <div class="col-md-12 col-md-4 col-lg-4 col-xl-4 col-content">
-                        </div>
-                        <div class="col-md-12 col-md-4 col-lg-4 col-xl-4 col-content">
+                        <div class="col-md-12 col-md-4 col-lg-4 col-xl-4 col-content d-flex justify-content-center align-items-center">
                           <button type="button" id="next-step-2" onClick="$('#next-step').click();"
-                            class="btn-gold btn-skip-extras enabled">Review &amp; Checkout <i
+                            class="btn-gold btn-skip-extras enabled width-90">Review &amp; Checkout <i
                               class="fa fa-arrow-right"></i></button>
                         </div>
                       </div>
@@ -3593,7 +3664,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="filteronemain nomargintop">
+                            <div class="">
                               <div class="">
                                 <div class="filterdeparttext ovrn" style="display:none;">
                                   <p>Overnights</p>
@@ -5724,8 +5795,8 @@ economy">Economy
                             </div>
                           </div>
                         </div>
-                        <div class="filteronemain">
-                          <div class="filterdepart">
+                        <div class="">
+                          <div>
                             <div class="filterdeparttext ovrn" style="display:none;">
                               <p>Overnights</p>
                             </div>
@@ -14299,7 +14370,7 @@ economy">Economy
                             href="https://www.reservhotel.com/html/airlink/itravelFAQ.pdf">COVID FAQ</a>
                         </div>
                       </div>
-                      <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 col-content">
+                      <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 col-content d-flex flex-column justify-content-center align-items-center">
                         <div class="row no-margin-lr">
                           <div class="col-4 col-sm-4 col-md-4 col-lg-12 col-xl-12 col-content espaciado p-person">
                             <div
@@ -14546,7 +14617,9 @@ economy">Economy
           <input type="hidden" name="fareclass" value="E">
           <input type="hidden" id="source" name="source" value="FL">
           <input type="hidden" name="r" id="r" value="">
-          <p class="center"><input type="submit" value="Next Step" id="next-step" class="btn-gold enabled next-step-button"/></p>
+          <p class="center button-next">
+            <input type="submit" value="Next Step" id="next-step" class="btn-gold enabled next-step-button"/>
+          </p>
         </form>
       </div>
     </div>

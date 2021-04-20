@@ -3064,8 +3064,8 @@ header#header>.sec-nav>ul>li a.selected {
 }
 
 .flights-wrap .flight-filter-box {
-  margin-top: -70px;
-  padding: 5px;
+  /* margin-top: -70px; */
+  /* padding: 5px; */
   background: #f7f7f7;
   border-radius: 3px
 }
@@ -3080,7 +3080,7 @@ header#header>.sec-nav>ul>li a.selected {
 }
 
 .flights-wrap .flight-filter-box .flight-filter-inner .group .form-content {
-  padding: 17px 23px;
+  /* padding: 17px 23px; */
   *zoom: 1;
   clear: both
 }
@@ -5529,9 +5529,9 @@ header#header>.sec-nav>ul>li a:hover {
   }
 }
 
-@media(max-width:767px) {
+@media(max-width:768px) {
   div.all-wrap.fixed-width {
-    width: 100% !important
+    width: 90%;
   }
 }
 
