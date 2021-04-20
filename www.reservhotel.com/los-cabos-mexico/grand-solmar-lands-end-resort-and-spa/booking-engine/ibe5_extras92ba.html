@@ -455,7 +455,7 @@
     .flightsdetails {
       width: 60%;
       float: left;
-      margin-top: 23px;
+      /* margin-top: 23px; */
       margin-left: 43px
     }
 
@@ -564,7 +564,8 @@
     }
 
     .flightdetailsbox {
-      margin-bottom: 10px;
+      /* margin-bottom: 10px; */
+      padding: 15px 0px;
       border-top: 1px solid #e2dfdf;
       width: 100%;
       float: left;
@@ -581,7 +582,7 @@
       width: 31%;
       float: left;
       border: 2px solid #e2dfdf;
-      margin: 35px 3px 0;
+      margin: 0px 3px 0;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -650,9 +651,9 @@
     }
 
     .filtersmainbox {
-      right: 10px;
+      right: auto;
       z-index: 444;
-      width: 373px;
+      width: auto;
       float: left;
       position: absolute;
       margin-top: 40px;
@@ -665,11 +666,11 @@
     .filteronemain {
       width: 100%;
       float: left;
-      margin: 40px 0 0 35px
+      /* margin: 40px 0 0 35px */
     }
 
     .filterdepart {
-      width: 45%;
+      width: 100%;
       float: left
     }
 
@@ -681,7 +682,7 @@
     }
 
     .departform {
-      width: 100%;
+      /* width: 100%; */
       float: left;
       /* margin-top: 15px */
     }
@@ -1269,8 +1270,11 @@
       div.all-wrap.fixed-width{
         width: 100%;
       }
+      .flightdetailsbox{
+        padding: 2rem 0px;
+      }
       .flightdetailsmain{
-        padding-top:2rem;
+        /* padding-top:2rem; */
       }
       .flightname img{
         width:100%;
@@ -3470,7 +3474,7 @@
           </div>
 
         </div>
-        <div class="collapse navbar-toggleable-sm col-md-5 col-sm-12 col-12" id="navbar-collapse"
+        <div class="collapse navbar-toggleable-sm col-md-6 col-sm-12 col-12" id="navbar-collapse"
           style="padding-right:0px;">
           <ul class="top-nav-ul nav navbar-nav pull-xs-right col-12 col-sm-12 col-md-12">
             <li><a href="http://www.grandsolmarresort.com/"><span class="fa fa-home fa-lg" aria-hidden="true"
@@ -3517,13 +3521,11 @@
             </li>
           </ul>
         </div>
-        <div class="col-sm-2 text-center hidden-xs-down hidden-sm-down">
-        </div>
-        <div class="col-sm-5 text-center hide-shopping-car"
-          style="padding-right:0px;    margin-left: -2px;">
-          <div class="row" style="margin-top: 0px !important;">
-            <div class="col-6 col-sm-6 offset-sm-6 trav-sum-div">
-              <a href="javascript:void(0)" class="travel-summary-box" style="width: 365px;">
+        
+        <div class="col-md-6 text-center hide-shopping-car">
+          <div class="" style="margin-top: 0px !important;">
+            <div class="col-6 col-sm-12 trav-sum-div">
+              <a href="javascript:void(0)" class="travel-summary-box" style="width: 50% !important;">
                 <span class="travel-sum-icon"><i class="fa fa-lg fa-shopping-cart"></i></span>
                 <span>Travel Summary</span>
                 <span class="summary-total hotel_grand_total custom-price"></span>
@@ -3628,20 +3630,20 @@
                             </div>
                           </div>
                           <div class="filtersmainbox">
-                            <div class="filteronemain">
+                            <div class="filteronemain p-3">
                               <div class="group hasstops" style="display:none;">
-                                <div class="filterdepart" style="width:50%;">
+                                <div class="filterdepart">
                                   <div class="filterdeparttext">
                                     <p>Number of Stops</p>
                                   </div>
                                   <div class="number-of-stops stops">
-                                    <label class="container"><input type="radio" id="stopsall" name="dstops"
+                                    <label class=""><input type="radio" id="stopsall" name="dstops"
                                         onClick="filter('D');" checked /> All</label>
-                                    <label class="container nonstop" style="display:none;"><input type="radio"
+                                    <label class=" nonstop" style="display:none;"><input type="radio"
                                         name="dstops" id="stops0" onClick="filter('D');" /> Nonstop</label>
-                                    <label class="container 1stop" style="display:none;padding-right: 5px;"><input
+                                    <label class=" 1stop" style="display:none;padding-right: 5px;"><input
                                         type="radio" name="dstops" id="stops1" onClick="filter('D');" /> 1 Stop</label>
-                                    <label class="container 2stop" style="display:block;"><input type="radio"
+                                    <label class=" 2stop" style="display:block;"><input type="radio"
                                         name="dstops" id="stops2" onClick="filter('D');" /> 2+
                                       Stops</label>
                                   </div>
@@ -3652,11 +3654,11 @@
                                   <p>By Departure Time</p>
                                 </div>
                                 <div class="departform">
-                                  <label class="container"><input type="radio" name="dbydtime" id="ddepartall"
+                                  <label class=""><input type="radio" name="dbydtime" id="ddepartall"
                                       onClick="filter('D');" checked /> All Times</label>
-                                  <label class="container"><input type="radio" id="ddepartmorn" name="dbydtime"
+                                  <label class=""><input type="radio" id="ddepartmorn" name="dbydtime"
                                       onClick="filter('D');" /> Morning</label>
-                                  <label class="container"><input type="radio" id="ddepartmid" name="dbydtime"
+                                  <label class=""><input type="radio" id="ddepartmid" name="dbydtime"
                                       onClick="filter('D');" /> Mid-Day</label>
                                 </div>
                               </div>
@@ -3665,13 +3667,13 @@
                                   <p>By Arrival Time</p>
                                 </div>
                                 <div class="departform">
-                                  <label class="container"><input type="radio" name="dbyatime" id="darriveall"
+                                  <label class=""><input type="radio" name="dbyatime" id="darriveall"
                                       onClick="filter('D');" checked /> All Times</label>
-                                  <label class="container"><input type="radio" id="darrivemorn" name="dbyatime"
+                                  <label class=""><input type="radio" id="darrivemorn" name="dbyatime"
                                       onClick="filter('D');" /> Morning</label>
-                                  <label class="container"><input type="radio" id="darrivemid" name="dbyatime"
+                                  <label class=""><input type="radio" id="darrivemid" name="dbyatime"
                                       onClick="filter('D');" /> Mid-Day</label>
-                                  <label class="container"><input type="radio" id="darriveeven" name="dbyatime"
+                                  <label class=""><input type="radio" id="darriveeven" name="dbyatime"
                                       onClick="filter('D');" /> Evening</label>
                                 </div>
                               </div>
@@ -3680,15 +3682,15 @@
                                   <p>By Airline</p>
                                 </div>
                                 <div class="departform">
-                                  <label class="container"><input type="radio" value="ALL" name="dairlinefilter"
+                                  <label class=""><input type="radio" value="ALL" name="dairlinefilter"
                                       id="dairlineall" onClick="filter('D');" checked /> All Airlines</label>
-                                  <label class="container"><input type="radio" name="dairlinefilter" id="dairline1"
+                                  <label class=""><input type="radio" name="dairlinefilter" id="dairline1"
                                       value="DL" onClick="filter('D');" /> Delta Air Lines</label>
-                                  <label class="container"><input type="radio" name="dairlinefilter" id="dairline2"
+                                  <label class=""><input type="radio" name="dairlinefilter" id="dairline2"
                                       value="AM" onClick="filter('D');" /> Aeromexico</label>
-                                  <label class="container"><input type="radio" name="dairlinefilter" id="dairline3"
+                                  <label class=""><input type="radio" name="dairlinefilter" id="dairline3"
                                       value="AA" onClick="filter('D');" /> American Airlines</label>
-                                  <label class="container"><input type="radio" name="dairlinefilter" id="dairline4"
+                                  <label class=""><input type="radio" name="dairlinefilter" id="dairline4"
                                       value="UA" onClick="filter('D');" /> United Airlines</label>
                                 </div>
                               </div>
@@ -3699,7 +3701,7 @@
                                   <p>Overnights</p>
                                 </div>
                                 <div class="departform ovrn" style="display:none;">
-                                  <label class="container">
+                                  <label class="">
                                     <input type="checkbox" id="overnightscheckdep" />
                                     Hide Overnights
                                   </label>
@@ -5775,20 +5777,20 @@ economy">Economy
                         </div>
                       </div>
                       <div class="filtersmainbox">
-                        <div class="filteronemain">
+                        <div class="filteronemain p-3">
                           <div class="group hasstops" style="display:none;">
                             <div class="filterdepart" style="width:100%;">
                               <div class="filterdeparttext">
                                 <p>Number of Stops</p>
                               </div>
                               <div class="number-of-stops stops">
-                                <label class="container"><input type="radio" name="rstops" id="rstopsall"
+                                <label class=""><input type="radio" name="rstops" id="rstopsall"
                                     onClick="filter('R');" checked /> All</label>
-                                <label class="container"><input type="radio" name="rstops"
+                                <label class=""><input type="radio" name="rstops"
                                     id="rstops0" onClick="filter('R');" /> Nonstop</label>
-                                <label class="container"><input
+                                <label class=""><input
                                     type="radio" name="rstops" id="rstops1" onClick="filter('R');" /> 1 Stop</label>
-                                <label class="container"><input type="radio" name="rstops"
+                                <label class=""><input type="radio" name="rstops"
                                     id="rstops2" onClick="filter('R');" /> 2+ Stops</label>
                               </div>
                             </div>
@@ -5798,13 +5800,13 @@ economy">Economy
                               <p>By Departure Time</p>
                             </div>
                             <div class="departform">
-                              <label class="container"><input type="radio" name="rbydtime" id="rdepartall"
+                              <label class=""><input type="radio" name="rbydtime" id="rdepartall"
                                   onClick="filter('R');" checked /> All Times</label>
-                              <label class="container"><input type="radio" name="rbydtime" id="rdepartmorn"
+                              <label class=""><input type="radio" name="rbydtime" id="rdepartmorn"
                                   onClick="filter('R');" /> Morning</label>
-                              <label class="container"><input type="radio" name="rbydtime" id="rdepartmid"
+                              <label class=""><input type="radio" name="rbydtime" id="rdepartmid"
                                   onClick="filter('R');" /> Mid-Day</label>
-                              <label class="container"><input type="radio" name="rbydtime" id="rdeparteven"
+                              <label class=""><input type="radio" name="rbydtime" id="rdeparteven"
                                   onClick="filter('R');" /> Evening</label>
                             </div>
                           </div>
@@ -5813,13 +5815,13 @@ economy">Economy
                               <p>By Arrival Time</p>
                             </div>
                             <div class="departform">
-                              <label class="container"><input type="radio" name="rbyatime" id="rarriveall"
+                              <label class=""><input type="radio" name="rbyatime" id="rarriveall"
                                   onClick="filter('R');" checked /> All Times</label>
-                              <label class="container"><input type="radio" name="rbyatime" id="rarrivemorn"
+                              <label class=""><input type="radio" name="rbyatime" id="rarrivemorn"
                                   onClick="filter('R');" /> Morning</label>
-                              <label class="container"><input type="radio" name="rbyatime" id="rarrivemid"
+                              <label class=""><input type="radio" name="rbyatime" id="rarrivemid"
                                   onClick="filter('R');" /> Mid-Day</label>
-                              <label class="container"><input type="radio" name="rbyatime" id="rarriveeven"
+                              <label class=""><input type="radio" name="rbyatime" id="rarriveeven"
                                   onClick="filter('R');" /> Evening</label>
                             </div>
                           </div>
@@ -5830,7 +5832,7 @@ economy">Economy
                               <p>Overnights</p>
                             </div>
                             <div class="departform ovrn" style="display:none;">
-                              <label class="container">
+                              <label class="">
                                 <input type="checkbox" id="overnightscheckret" />
                                 Hide Overnights
                               </label>

@@ -142,8 +142,9 @@ header#header>div.top-nav .travel-summary-box.active {
     padding: 1px;
     text-align: right;
     position: absolute;
-    width: 70%;
-    right: 0
+    /* width: 70%; */
+    width: auto !important;
+    right: 0;
   }
 
   header#header>div.top-nav .travel-summary-box:hover,
