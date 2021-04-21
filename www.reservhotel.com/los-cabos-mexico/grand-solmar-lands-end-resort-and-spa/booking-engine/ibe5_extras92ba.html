@@ -592,7 +592,7 @@
       float: initial;
       width: 140px;
       /* margin: 30px 12px; */
-      padding:1rem;
+      /* padding:1rem; */
       text-align: center;
       font-size: 14px;
       font-weight: 700;
@@ -651,9 +651,10 @@
     }
 
     .filtersmainbox {
-      right: auto;
+      right: 4%;
       z-index: 444;
       width: auto;
+      min-width: 300px;
       float: left;
       position: absolute;
       margin-top: 40px;
@@ -666,16 +667,20 @@
     .filteronemain {
       width: 100%;
       float: left;
+      display: flex;
+      flex-direction: column;
       /* margin: 40px 0 0 35px */
     }
 
     .filterdepart {
-      width: 100%;
-      float: left
+      width: auto;
+      float: left;
+      display: flex;
+      flex-direction: column;
     }
 
     .filterdeparttext {
-      width: 100%;
+      width: auto;
       float: left;
       font-size: 15px;
       font-weight: 700
@@ -756,7 +761,7 @@
     
     .resetfilter {
       text-transform: uppercase;
-      width: 80%;
+      width: 90%;
       text-align: center;
       font-size: 15px;
       color: #fff;
@@ -936,14 +941,14 @@
       }
 
       .filtersmainbox {
-        width: 303px
+        width: 300px
       }
 
       .filteronemain {
         /* background:green; */
         width: 100%;
         float: left;
-        margin: 40px 0 0 7px
+        /* margin: 40px 0 0 7px */
       }
 
       .filterdepart {
@@ -956,6 +961,9 @@
     }
 
     @media (max-width:768px) {
+      .filtersmainbox {
+        right:auto;
+      }
       .hide-shopping-car{
         display:none;
       }
@@ -966,7 +974,7 @@
         justify-content: center;
       }
       .width-90{
-        width:90% !important;
+        width:100%;
       }
       .flightnamedetails{
         text-align:center;
@@ -1259,6 +1267,9 @@
     }
 
     @media screen and (max-width: 500px) {
+      .width-90{
+        width:90% !important;
+      }
       .button-next{
         display:flex;
         align-items:center;
