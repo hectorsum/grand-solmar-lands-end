@@ -978,6 +978,12 @@
     }
 
     @media (max-width:768px) {
+      .custom-more-flights{
+        height:450px;
+      }
+      .custom-more-flights .fancybox-inner{
+        height:450px !important;
+      }
       .filtersmainbox {
         right:auto;
       }
@@ -1621,12 +1627,6 @@
     }
 
     @media screen and (max-width: 480px) {
-      .custom-more-flights{
-        height:450px;
-      }
-      .custom-more-flights .fancybox-inner{
-        height:450px !important;
-      }
       #contentmain{
         margin:0;
       }
@@ -3211,7 +3211,7 @@
         fitToView: false,
         autoSize: true,
         closeClick: false,
-        'closeBtn': true,
+        'closeBtn': false,
         'hideOnOverlayClick': false,
         'hideOnContentClick': false,
         helpers: {
